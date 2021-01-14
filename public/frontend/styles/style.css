@@ -1,0 +1,102 @@
+header {
+    padding: 250px 0 165px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/Capture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+.section-popular {
+    min-height: 540px;
+    background-color: #fff;
+    margin-top: -83px;
+    margin-bottom: -230px;
+}
+
+.section-popular h5 {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.section-popular .btn {
+    margin-top: -53px;
+}
+
+.section-popular .card {
+    margin-bottom: 15px;
+}
+
+.section-popular a {
+    color: black;
+    text-decoration: none;
+}
+
+.section-popular a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.popular-detail img {
+    Width: 100%;
+    object-fit: cover;
+    transition: filter .3s ease;
+}
+
+.popular-detail img:hover {
+    filter: brightness(60%);
+}
+
+.popular-detail i {
+    margin-top: -15px;
+    color: #ffc107;
+}
+
+.popular-detail i span {
+    color: black;
+    font-family: montserrat;
+}
+
+.search-box {
+    background: #4d4dff;
+    position: relative;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.search-box .search-btn {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: #6666ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-box .input-search {
+    outline: none;
+    border: 0;
+    background: #6666ff;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}

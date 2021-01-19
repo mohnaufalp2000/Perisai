@@ -34,7 +34,7 @@ class GalleryController extends Controller
     {
         $travel_packages = TravelPackage::all();
         return view('pages.admin.gallery.create',[
-            'travel_package' => $travel_packages
+            'travel_packages' => $travel_packages
         ]);
     }
 
@@ -49,6 +49,7 @@ class GalleryController extends Controller
         $data = $request->all();
         
         $data['image'] = $request->file('image')->store('assets/gallery','public');
+        
 
         Gallery::create($data);
         return redirect()->route('gallery.index');

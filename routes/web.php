@@ -13,8 +13,12 @@
 
 Route::get('/', 'HomeController@index')
     ->name('home');
-    
 
+    Route::get('search', 'HomeController@search')
+    ->name('search');    
+
+Route::get('/detail/{slug}', 'DetailController@index')
+    ->name('detail');       
 
 Route::prefix('admin')
     ->namespace('Admin')

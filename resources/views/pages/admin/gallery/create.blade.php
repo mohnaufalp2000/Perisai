@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+@section('title')
+    Perisai Admin - Gallery
+@endsection
+
 
 @section('content')
 
@@ -26,9 +30,9 @@
                             <form action="{{route ('gallery.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="travel_packages_id">Paket Travel</label>
+                                    <label>Tempat Wisata</label>
                                     <select name="travel_packages_id" required class="form-contol">
-                                        <option value="">Pilih Paket Travel</option>
+                                        <option value="">Pilih Tempat Wisata</option>
                                         @foreach($travel_packages as $travel_package)
                                             <option value="{{ $travel_package->id}}">
                                             {{ $travel_package->title}}

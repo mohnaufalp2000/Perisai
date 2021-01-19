@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+@section('title')
+    Perisai Admin - Gallery
+@endsection
+
 
 @section('content')
 

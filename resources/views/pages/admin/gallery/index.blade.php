@@ -1,5 +1,10 @@
 @extends('layouts.admin')
 
+@section('title')
+    Perisai Admin - Gallery
+@endsection
+
+
 
 @section('content')
 
@@ -30,7 +35,7 @@
                                         @forelse ($items as $item)
                                         <tr>
                               <td>{{ $item->id }}</td>
-                              <td>{{ $item->travel_package->title }}</td>
+                              <td>{{ $item->travel_package->title}}</td>
                               <td>
                                   <img src="{{ Storage::url($item->image) }}" alt="" style="width: 200px" class="img-thumbnail">
                               </td>

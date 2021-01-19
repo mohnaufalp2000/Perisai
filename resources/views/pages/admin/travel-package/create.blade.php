@@ -1,5 +1,10 @@
 @extends('layouts.admin')
 
+@section('title')
+    Perisai Admin - Tempat Wisata
+@endsection
+
+
 
 @section('content')
 
@@ -44,6 +49,10 @@
                                 <div class="form-group">
                                     <label for="schedule">Schedule</label>
                                     <input type="text" class="form-control" name="schedule" placeholder="Schedule" value="{{ old('schedule')}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="maps">Maps</label>
+                                    <input type="text" class="form-control" name="maps" placeholder="Maps" value="{{ old('maps')}}">
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">
                                     simpan

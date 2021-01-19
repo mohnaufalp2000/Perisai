@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+        <div class="text-center mb-4"><img src="{{ url('frontend/img/perisai.png') }}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> PERISAI ADMIN</div>
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 

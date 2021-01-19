@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 
 
+@section('title')
+    Perisai Admin - Tempat Wisata
+@endsection
+
+
 @section('content')
 
                 <!-- Begin Page Content -->
@@ -45,6 +50,10 @@
                                 <div class="form-group">
                                     <label for="schedule">Schedule</label>
                                     <input type="text" class="form-control" name="schedule" placeholder="Schedule" value="{{ $item -> schedule}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="maps">maps</label>
+                                    <input type="text" class="form-control" name="maps" placeholder="Maps" value="{{ $item -> maps}}">
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">
                                     edit

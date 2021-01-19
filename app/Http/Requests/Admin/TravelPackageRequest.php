@@ -29,6 +29,7 @@ class TravelPackageRequest extends FormRequest
             'about' => 'required',
             'price' => 'required | integer',
             'schedule' => 'required | max:255',
+            'maps' => 'required | max:255',
         ];
     }
 }

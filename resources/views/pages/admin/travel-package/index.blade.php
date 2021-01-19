@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 
 
+@section('title')
+    Perisai Admin - Tempat Wisata
+@endsection
+
+
 @section('content')
 
                 <!-- Begin Page Content -->
@@ -14,7 +19,7 @@
                         </a>
                     </div>
 
-                    <div class="row">
+                    <div class="row" style="overflow-x:scroll;">
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" width="100%" cellspacing="0">
@@ -26,6 +31,7 @@
                                             <th>About</th>
                                             <th>Price</th>
                                             <th>Schedule</th>
+                                            <th>Maps</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -38,6 +44,7 @@
                                             <td>{{ $item->about }}</td>
                                             <td>{{ $item->price }}</td>
                                             <td>{{ $item->schedule }}</td>
+                                            <td>{{ $item->maps }}</td>
                                             <td>
                                                 <a href="{{route ('travel-package.edit', $item->id)}}" class="btn btn-info">
                                                 <i class="fa fa-pencil-alt"></i>
